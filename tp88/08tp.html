@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK SOULS</title>
+    <link rel="stylesheet" href="08888-.css">
+    <style>
+
+    body {
+      background-image: url('images/232613.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      height: 235vh;
+    }
+
+  </style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DARK SOULS</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido al mundo de Dark Souls</h2>
+        <p>Dark Souls es un juego de rol de acción famoso por su dificultad y su diseño de mundo oscuro y desafiante. Explora castillos antiguos, lucha contra enemigos poderosos y desentraña los misterios de Lordran.</p>
+        <img src="images/images-removebg-preview.png"width=50px alt="Dark Souls" class="image">
+    </section>
+
+    <section id="descripcion">
+        <h2>Descripción del Juego</h2>
+        <div class="categoria">
+            <h3>Historia</h3>
+            <p>Dark Souls tiene lugar en un mundo sombrío donde el jugador sigue a un personaje conocido como el "No Muerto", que busca una solución a la maldición de la no muerte y la amenaza de los Señores Oscuros.</p>
+            <button class="btn-info" onclick="mostrarInfo('historia')">Más Información</button>
+            <p id="historia" class="informacion-oculta">La historia está llena de personajes trágicos y un mundo donde la luz y la oscuridad se entrelazan, con varias interpretaciones posibles.</p>
+        </div>
+
+        <div class="categoria">
+            <h3>Jugabilidad</h3>
+            <p>El juego es conocido por su sistema de combate desafiante y la exploración de un mundo abierto donde cada decisión puede ser fatal. Los jugadores deben gestionar su resistencia, aprender patrones de ataque y mejorar sus habilidades.</p>
+            <button class="btn-info" onclick="mostrarInfo('jugabilidad')">Más Información</button>
+            <p id="jugabilidad" class="informacion-oculta">La dificultad del juego radica en la importancia de los enfrentamientos, el manejo de recursos limitados y la estrategia en cada combate.</p>
+        </div>
+
+        <div class="categoria">
+            <h3>Personajes</h3>
+            <p>Dark Souls presenta una variedad de personajes jugables, entre los que se incluyen caballeros, magos y pícaros, cada uno con habilidades únicas que afectan el estilo de combate.</p>
+            <button class="btn-info" onclick="mostrarInfo('personajes')">Más Información</button>
+            <p id="personajes" class="informacion-oculta">Cada personaje tiene una historia que se entrelaza con la narrativa del juego, y muchas veces el jugador debe decidir si seguir ciertos caminos o enfrentarse a dilemas morales.</p>
+        </div>
+
+        <div class="categoria">
+            <h3>Enemigos</h3>
+            <p>El juego está repleto de enemigos, desde criaturas deformes hasta poderosos jefes. Cada enemigo tiene un comportamiento y habilidades únicas, lo que obliga al jugador a adaptar su estrategia constantemente.</p>
+            <button class="btn-info" onclick="mostrarInfo('enemigos')">Más Información</button>
+            <p id="enemigos" class="informacion-oculta">Algunos enemigos son casi imposibles de vencer al principio, pero con paciencia y habilidad se pueden derrotar, a menudo dejándote tesoros valiosos.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o comentarios sobre Dark Souls? ¡Contáctanos!</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+   
+    <footer>
+        <p>© 2024 Dark Souls Fan Page. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarInfo(id) {
+            var elemento = document.getElementById(id);
+            if (elemento.style.display === "none") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
