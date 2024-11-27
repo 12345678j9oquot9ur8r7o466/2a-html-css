@@ -1,144 +1,114 @@
-/* General */
+* {
+    box-sizing: border-box;
+    
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(120deg, #e77f08, #139015);
-    color: #272727;
-    overflow-x: hidden;
+    padding: 0;  
+    background-color: #f6f5ea;
 }
 
-h1, h2 {
-    font-family: 'Georgia', serif;
+header, nav, main, aside, footer {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #d7791b;
+    background-color: rgb(5, 162, 5);
 }
 
-a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Encabezado */
 header {
-    background: linear-gradient(90deg, #f99500, #0f760a);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
+    background-color: #c76d39;
+    width: auto;
+    text-align: left;
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin: 0;
+    background-color: rgb(219, 255, 90);
+    margin: auto;
+    width: max-content;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+nav li {
+    display: inline;
+    margin-right: 10px;
 }
 
-nav ul li a {
-    color: rgb(27, 27, 27);
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #1eac2a;
-}
-
-/* Contenido principal */
 main {
-    padding: 40px 10%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    width: 60%;
+    float: left;
+    margin-right: 2%;
 }
 
-section {
-    background: rgb(250, 255, 246);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgb(81, 81, 81);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgb(233, 226, 226);
-}
-
-section h2 {
-    margin-top: 0;
-    color: #058f00;
-}
-
-/* Barra lateral */
 aside {
-    background: #323232;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    float: left;
 }
 
-aside h2 {
-    color: #c69914;
-}
-
-aside ul {
-    list-style: square;
-    padding-left: 20px;
-}
-
-aside ul li {
-    margin-bottom: 10px;
-}
-
-aside ul li a {
-    color: #118913;
-}
-
-aside ul li a:hover {
-    color: #FF5722;
-}
-
-/* Pie de página */
-footer {
-    background: #494949;
-    color: rgb(228, 228, 228);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer p a {
-    color: #FFD700;
-}
-
-footer p a:hover {
-    color: #FF5722;
-}
-
-/* Transiciones y diseño responsivo */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+article  {
+    margin-bottom: 20px;
+    margin: 2px 1em 0 auto
     
-    main {
-        padding: 20px;
-        grid-template-columns: 1fr;
-    }
+
+    
+} 
+
+footer {
+    clear: both;
+    background-color: #b9db69;
+   
+    
 }
+
+h1  { 
+
+color: #130f0f;
+background-color: #eca5fa;
+width: 35%;
+text-align: center;
+margin-inline-start: 35%;
+
+}
+
+h2 {
+
+    color: #030303;
+    background-color: #f0ac7e;
+    padding: 0%;
+    width: 35%;
+     
+}
+
+title {
+ 
+    color: #680157;
+
+}
+
+a:link {
+  color: rgb(2, 0, 0); 
+
+}
+
+
+a:visited {
+    color: rgb(72, 5, 255);
+  }
+
+  a{
+    color: black;
+  }
+
+  a:hover{
+    color: red;
+  }
+
+  a:active{
+    color: blue;
+  }
+
+    
+
